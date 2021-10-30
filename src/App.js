@@ -4,7 +4,8 @@ import { AuthContext } from "lib/contexts";
 import ExplorePage from "components/explore/ExplorePage";
 
 export default function App() {
-  const [isSignedIn, setIsSignedIn] = useState(false);
+  const storedAuthFlag = localStorage.getItem("auth");
+  const [isSignedIn, setIsSignedIn] = useState(Boolean(storedAuthFlag));
   return (
     <AuthContext.Provider value={{ isSignedIn, setIsSignedIn }}>
       {isSignedIn ? <ExplorePage /> : <SignIn />}

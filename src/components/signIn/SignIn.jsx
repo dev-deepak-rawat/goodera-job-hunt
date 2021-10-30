@@ -16,6 +16,7 @@ export default function SignIn() {
     event.preventDefault();
     const { email, password } = credentials;
     if (email === CREDENTIALS.EMAIL && password === CREDENTIALS.PASSWORD) {
+      localStorage.setItem("auth", "true");
       setIsSignedIn(true);
     } else {
       alert("Invalid Credentials");

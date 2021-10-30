@@ -4,6 +4,12 @@ import { useContext } from "react";
 
 export default function ExploreHead({ activePage, setActivePage }) {
   const { setIsSignedIn } = useContext(AuthContext);
+
+  const signOut = () => {
+    localStorage.removeItem("auth");
+    setIsSignedIn(false);
+  };
+
   return (
     <div className="heading">
       <nav className="navbar">
@@ -26,10 +32,7 @@ export default function ExploreHead({ activePage, setActivePage }) {
             Post a Job
           </span>
         </div>
-        <span
-          className="navbar__item sign-out"
-          onClick={() => setIsSignedIn(false)}
-        >
+        <span className="navbar__item sign-out" onClick={signOut}>
           Sign out
         </span>
       </nav>

@@ -41,6 +41,19 @@
   font-weight: bold;
   font-size: 0.9rem;
 }
+
+.card-items__button {
+  border: 2px solid #f07987;
+  color: #f07987;
+  background: #fff;
+  margin-top: 2rem;
+}
+
+.card-items__button:hover {
+  color: #fff;
+  background: #f07987;
+}
+
 @media only screen and (max-width: 1050px) {
   .card-item {
     flex-basis: 40%;
