@@ -22,13 +22,19 @@
 }
 
 .sign-box__input {
-  width: 100%;
+  width: 95%;
+  height: 2rem;
+  margin: 1rem auto;
 }
 
 .sign-box__submit {
-  width: 100%;
+  width: 95%;
   background: #5e81e0;
   color: #fff;
+  height: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
 }
 
 /* Tablet styling */

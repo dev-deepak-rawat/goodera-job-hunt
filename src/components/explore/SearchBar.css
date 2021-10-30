@@ -1,0 +1,45 @@
+.searchbar {
+  width: 80%;
+  position: absolute;
+  margin: 1rem 10% 1rem 10%;
+  box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 8%) 0px 0px 0px 1px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background: #fff;
+  top: 205px;
+}
+
+.searchbar .form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchbar__input {
+  width: 28%;
+  margin: auto 2rem;
+  height: 2rem;
+}
+
+.searchbar__button {
+  width: 30%;
+  background: #f07987;
+  color: #fff;
+  height: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .searchbar {
+    width: 80%;
+    position: absolute;
+    margin: 1rem 10% 1rem 10%;
+    box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px,
+      rgb(0 0 0 / 8%) 0px 0px 0px 1px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background: #fff;
+    top: 250px;
+  }
+}

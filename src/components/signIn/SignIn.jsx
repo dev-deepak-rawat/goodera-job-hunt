@@ -33,6 +33,7 @@ export default function SignIn() {
             name="email"
             value={credentials.email || ""}
             onChange={handleChange}
+            placeholder="Email"
             required
           />
           <input
@@ -41,6 +42,7 @@ export default function SignIn() {
             name="password"
             value={credentials.password || ""}
             onChange={handleChange}
+            placeholder="Password"
             required
           />
 

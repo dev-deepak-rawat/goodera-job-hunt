@@ -1,0 +1,72 @@
+.job-listing {
+  background: #eaeaea;
+  padding-top: 70px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+}
+
+.card-item {
+  display: flex;
+  margin: 1rem;
+  box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 8%) 0px 0px 0px 1px;
+  border-radius: 0.5rem;
+  flex-basis: 40%;
+  padding: 1rem;
+  background: #fff;
+  margin-top: 0;
+}
+
+.card-item__details {
+  margin-left: 2rem;
+  margin-top: 0;
+}
+
+.card-item__img {
+  max-width: 38%;
+  border-radius: 1.5rem;
+}
+
+.card-item__details--name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card-items__specs--bold {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+@media only screen and (max-width: 1050px) {
+  .card-item {
+    flex-basis: 40%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+    width: auto;
+    margin: auto;
+  }
+  .card-item {
+    flex-direction: column;
+  }
+  .bubble {
+    max-width: 20ch;
+  }
+  .title {
+    margin: 1rem;
+  }
+  .card-item__img {
+    max-width: 95%;
+    border-radius: 1rem;
+  }
+  .card-item__details {
+    margin-left: 0;
+  }
+}

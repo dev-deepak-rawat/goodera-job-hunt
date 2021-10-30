@@ -1,0 +1,42 @@
+.heading {
+  background-image: linear-gradient(#5e7adf, #5eb0df);
+  padding: 3rem 15%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__item {
+  color: #fff;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.navbar__item:hover {
+  color: #fff;
+  border-bottom: 2px solid white;
+}
+
+.navbar__item--active {
+  border-bottom: 2px solid white;
+}
+
+.logo {
+  font-weight: bold;
+  margin-left: 0;
+}
+
+.sign-out {
+  align-self: flex-end;
+}
+
+.title {
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.subtitle {
+  color: #fff;
+}
