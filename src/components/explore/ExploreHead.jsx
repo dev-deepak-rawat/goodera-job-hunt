@@ -18,7 +18,6 @@ export default function ExploreHead({ activePage, setActivePage }) {
             Find Jobs
           </span>
           <span
-            className="navbar__item"
             onClick={() => setActivePage("createJob")}
             className={`navbar__item ${
               activePage === "createJob" ? "navbar__item--active" : ""
