@@ -1,19 +1,8 @@
-import { useState } from "react";
 import "components/explore/JobCard.css";
 import { THUMBNAIL } from "lib/constants";
 
 export default function JobCard({ job = {} }) {
-  const {
-    contents = "",
-    name = "",
-    type = "",
-    publication_date = "",
-    short_name = "",
-    id,
-    locations = [],
-    levels = [],
-    company = {},
-  } = job;
+  const { name = "", locations = [], company = {} } = job;
 
   const [{ name: locationName = "" } = {}] = locations;
 
@@ -35,7 +24,6 @@ export default function JobCard({ job = {} }) {
             </span>
           </div>
         </div>
-        {/* <p dangerouslySetInnerHTML={{ __html: contents }} /> */}
       </div>
     </div>
   );
