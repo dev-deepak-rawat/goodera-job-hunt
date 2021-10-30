@@ -1,5 +1,12 @@
-import React from "react";
+import { useState } from "react";
+import SignIn from "components/signIn/SignIn";
+import { AuthContext } from "lib/contexts";
 
 export default function App() {
-  return <div>Goodera Job Hunt</div>;
+  const [isSignedIn, setIsSignedIn] = useState(false);
+  return (
+    <AuthContext.Provider value={{ isSignedIn, setIsSignedIn }}>
+      <SignIn />
+    </AuthContext.Provider>
+  );
 }
